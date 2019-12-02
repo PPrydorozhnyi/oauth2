@@ -41,6 +41,9 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
         return super.authenticationManagerBean();
     }
 
+    /**
+     * @return Bcrypt password encoder according to configuration in oauth_client_details table
+     */
     @Bean
     public PasswordEncoder passwordEncoder() {
         return passwordEncoder;
