@@ -8,3 +8,11 @@ spring:
     url: jdbc:postgresql://localhost:5432/auth_server
     username: auth
     password: auth
+
+#Example of generated self-signed certificate
+security:
+  jwt:
+    key-store: classpath:keystore.jks
+    key-store-password: letmein
+    key-pair-alias: mytestkey
+    key-pair-password: changeme
