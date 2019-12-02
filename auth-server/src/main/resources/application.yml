@@ -1,0 +1,10 @@
+server:
+  port: 8090
+
+debug: true
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/auth_server
+    username: auth
+    password: auth
