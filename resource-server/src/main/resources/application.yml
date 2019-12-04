@@ -1,0 +1,9 @@
+server:
+  port: 8091
+
+debug: true
+
+#Example of generated self-signed certificate
+security:
+  jwt:
+    public-key: classpath:public.txt
